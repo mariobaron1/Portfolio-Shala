@@ -1,0 +1,483 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.navbar {
+    height: 80px;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 100vw;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar-nav a {
+    color: white;
+    font-weight: 500;
+}
+
+/* home */
+
+.home {
+    background-image: url(./images/hero/1.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container-home {
+    background-color: tomato;
+}
+
+.bio {
+    position: absolute;
+    top: 40%;
+    color: white;
+    border-left: 1px solid white;
+}
+
+.bio h6 {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.bio h1 {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.bio h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* akhir home */
+
+/* about */
+.about {
+    min-height: 100vh;
+}
+
+.judul-about {
+    margin-top: 60px;
+}
+
+.judul-about h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.judul-about p {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.foto-about {
+    background-image: url(./images/about-me.jpeg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.nama-about {
+    padding-left: 50px;
+}
+
+.nama-about h5 span {
+    color: rgb(235, 101, 101);
+}
+
+.form-kanan {
+    float: right;
+
+}
+
+.form-kiri {
+    float: left;
+}
+
+.form-kanan li span,
+.form-kiri li span {
+    font-weight: 400;
+    font-weight: bolder;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media .icon a {
+    background-color: rgb(235, 101, 101);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+/* akhir about */
+
+/* awal services */
+
+.services {
+    min-height: 100vh;
+    background-color: rgb(232, 238, 255);
+    position: relative;
+}
+
+.services .container h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.img-thumbnail {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img-thumbnail:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.box {
+    height: 380px;
+    background-color: white;
+    margin-top: 20px;
+    position: relative;
+}
+
+.box::before {
+    content: '';
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .5s ease;
+}
+
+.box:hover::before {
+    width: 100%;
+}
+
+.icon {
+    margin-left: 140px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.box .icon {
+    background-color: rgb(235, 101, 101);
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.box .icon i {
+    line-height: 60px;
+    text-align: center;
+    margin-left: 32%;
+    font-size: 20px;
+    color: white;
+}
+
+.box .kata {
+    position: absolute;
+    margin-top: 120px;
+}
+
+.box .kata h5,
+.box .kata p {
+    text-align: center;
+    padding: 10px;
+}
+
+.spasi {
+    height: 100px;
+}
+
+/* akhir services */
+
+/* skills */
+.skills {
+    min-height: 100vh;
+}
+
+.form-skill {
+    margin-top: 170px;
+}
+
+.form-skill h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.form-skill p {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.img-skill {
+    margin-top: 100px;
+}
+
+.progress .progress-bar {
+    background-color: rgb(235, 101, 101);
+}
+
+/* akhir skills */
+
+/* works */
+.works {
+    min-height: 100vh;
+    background-color: rgb(232, 238, 255);
+}
+
+.works .container h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.works .container .box2 {
+    /* height: 380px; */
+    background-color: black;
+    margin-top: 20px;
+}
+
+.works .container .box2 img {
+    display: inline-block;
+    /* min-width: 350px;
+    min-height: 380px; */
+}
+
+.active-pag {
+    background-color: rgb(235, 101, 101);
+}
+
+.filter-btns .page-item a {
+    color: black;
+    font-weight: 400;
+}
+
+.tambahan {
+    height: 60px;
+    background-color: rgb(232, 238, 255);
+}
+
+/* akhir works */
+
+/* iklan */
+.iklan {
+    min-height: 20vh;
+    background-color: black;
+}
+
+.judul-iklan {
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.btn-iklan button {
+    margin-top: 50px;
+    margin-left: 190px;
+}
+
+/* akhir iklan */
+
+/* testimoni */
+
+.testimoni {
+    min-height: 80vh;
+    background-color: rgb(232, 238, 255);
+}
+
+.testimoni .container h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.carousel-item {
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.carousel-item img {
+    margin: auto;
+}
+
+.carousel-item .text p,
+.carousel-item .text h6 {
+    text-align: center;
+}
+
+/* akhir testimoni */
+
+/* blogs */
+
+.blog {
+    min-height: 100vh;
+}
+
+.blog .container h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.blog-box h6 {
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.blog-box p {
+    font-size: 14px;
+}
+
+.blog-box a {
+    color: salmon;
+}
+
+.blog .container img {
+    transition: .3s;
+}
+
+.blog .container img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* aljor blogs */
+
+/* form */
+.form {
+    min-height: 100vh;
+    background-color: rgb(232, 238, 255);
+}
+
+.form .container h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.form-comment input {
+    margin-top: 20px;
+    height: 250px;
+}
+
+.submit-form input {
+    margin-top: 20px;
+
+}
+
+/* akhir form */
+
+
+
+
+
+
+
+
+
+
+/* dll */
+.garis {
+    display: block;
+    width: 120px;
+    height: 3px;
+    background-color: rgb(235, 101, 101);
+}
+
+.tengah {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* responsive */
+@media (max-width: 576px) {
+
+    .navbar {
+        background-color: white;
+
+    }
+
+    .navbar-brand {
+        color: black !important;
+    }
+
+    .navbar-nav a {
+        color: black !important;
+        background-color: white;
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        background-color: black;
+    }
+
+    .nama-about {
+        margin-top: 30px;
+    }
+
+    .form-kanan {
+        float: none;
+    }
+
+    .form-kiri {
+        float: none;
+    }
+
+    .icon {
+        margin-left: 160px;
+    }
+
+    .form-skill {
+        margin-top: 70px;
+    }
+
+    .btn-iklan button {
+        margin-bottom: 30px;
+    }
+
+}
